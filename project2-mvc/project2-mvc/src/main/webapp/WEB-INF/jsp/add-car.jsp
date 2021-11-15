@@ -46,7 +46,7 @@
 			<div class="inner">
 				<h3 class="masthead-brand">Add Car</h3>
 				<nav class="nav nav-masthead justify-content-center">
-					<a class="nav-link active" href="/index">Home/Index</a> <a
+					<a class="nav-link active" href="/">Home/Index</a> <a
 						class="nav-link" href="/inventory">Inventory</a> <a
 						class="nav-link" href="/transactions">Transactions</a>
 				</nav>

@@ -55,6 +55,9 @@
 
 		<main role="main" class="inner cover">
 			<h1 class="cover-heading">Inventory Below</h1>
+			<!--  print if less than ten cars -->
+			<p>${minTenCars }</p>
+			<p>${min120 }</p>
 			<p class="lead">
 				<!-- start of chaos -->
 				<!-- list change -->
