@@ -46,9 +46,9 @@
 			<div class="inner">
 				<h3 class="masthead-brand">Add Car</h3>
 				<nav class="nav nav-masthead justify-content-center">
-					<a class="nav-link active" href="/index">Home/Index</a> <a
-						class="nav-link" href="#">Features</a> <a class="nav-link"
-						href="#">Contact</a>
+					<a class="nav-link active" href="/">Home/Index</a> <a
+						class="nav-link" href="/inventory">Inventory</a> <a
+						class="nav-link" href="/transactions">Transactions</a>
 				</nav>
 			</div>
 		</header>
@@ -56,6 +56,9 @@
 		<main role="main" class="inner cover">
 
 			<!-- Notice the form form stuff -->
+
+
+			<!-- spring form used -->
 
 			<form:form method="post" action="/add-car" modelAttribute="car">
 
@@ -65,12 +68,7 @@
 						<form:input path="manufacturer" type="text" class="form-control"
 							id="inputManufacturer" />
 					</div>
-					<div class="form-group col-md-6">
-						<label for="inputDateAddedToInventory">Date Added to
-							Inventory</label>
-						<form:input path="dateAddedToInventory" type="text"
-							class="form-control" id="inputDateAddedToInventory" />
-					</div>
+
 				</div>
 
 
@@ -114,23 +112,14 @@
 
 
 				</div>
-				<div class="form-group">
-					<div class="form-check">
-						<input class="form-check-input" type="checkbox" id="gridCheck" />
-						<label class="form-check-label" for="gridCheck"> Check me
-							out </label>
-					</div>
-				</div>
+
 				<button type="submit" class="btn btn-primary">Add Car</button>
 			</form:form>
 		</main>
 
 		<footer class="mastfoot mt-auto">
 			<div class="inner">
-				<p>
-					Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>,
-					by <a href="https://twitter.com/mdo">@mdo</a>.
-				</p>
+				<p></p>
 			</div>
 		</footer>
 	</div>

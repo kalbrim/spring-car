@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-	
+
 
 <html>
 <head>
@@ -46,31 +46,29 @@
 			<div class="inner">
 				<h3 class="masthead-brand">Car Dealer</h3>
 				<nav class="nav nav-masthead justify-content-center">
-					<a class="nav-link active" href="/inventory">Inventory</a> <a class="nav-link"
-						href="/add-car">Add Car to Inventory</a> <a class="nav-link" href="/search-by-model">Search by Model</a>
+					<a class="nav-link active" href="/inventory">Inventory</a> <a
+						class="nav-link" href="/add-car">Add Car to Inventory</a> <a
+						class="nav-link" href="/search-by-model">Search by Model</a> <a
+						class="nav-link active" href="/transactions">Reporting
+						Section(transactions)</a>
 				</nav>
 			</div>
 		</header>
 
 		<main role="main" class="inner cover">
-		<!-- pic try -->
-		<img src="images/dealershiphome.jpeg" alt="car cmon please" width="500" height="400">
-		<!-- pic try still -->
+			<!-- picture: note location -->
+			<!-- some say static folder should be used -->
+			<img src="images/dealershiphome.jpeg" alt="car cmon please"
+				width="500" height="400">
+
 			<h1 class="cover-heading">Car Dealer</h1>
-			<p class="lead">Cover is a one-page template for building simple
-				and beautiful home pages. Download, edit the text, and add your own
-				fullscreen background photo to make it your own.</p>
-			<p class="lead">
-				<a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-			</p>
+			<p class="lead"></p>
+			<p class="lead"></p>
 		</main>
 
 		<footer class="mastfoot mt-auto">
 			<div class="inner">
-				<p>
-					Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>,
-					by <a href="https://twitter.com/mdo">@mdo</a>.
-				</p>
+				<p></p>
 			</div>
 		</footer>
 	</div>

@@ -2,10 +2,14 @@ package com.project.entity;
 
 import java.time.LocalDate;
 
+
+
+
 public class Car {
-	private String manufacturer;
-	// changing to LocalDate 
 	
+	// requirement: Every detail of a vehicle like manufacturer name
+	// test git upload
+	private String manufacturer;
 	private LocalDate dateAddedToInventory;
 	private String kilometers;
 	private double price;

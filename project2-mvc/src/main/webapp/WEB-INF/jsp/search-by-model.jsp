@@ -46,9 +46,8 @@
 			<div class="inner">
 				<h3 class="masthead-brand">Search by Model</h3>
 				<nav class="nav nav-masthead justify-content-center">
-					<a class="nav-link active" href="/index">Home/Index</a> <a
-						class="nav-link" href="#">Features</a> <a class="nav-link"
-						href="#">Contact</a>
+					<a class="nav-link active" href="/">Home/Index</a> <a
+						class="nav-link" href="/inventory">Inventory</a> 
 				</nav>
 			</div>
 		</header>
@@ -81,7 +80,7 @@
 		<footer class="mastfoot mt-auto">
 			<div class="inner">
 				<p>
-					Bootstrap
+					
 				</p>
 			</div>
 		</footer>

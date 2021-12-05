@@ -48,22 +48,25 @@
 				<nav class="nav nav-masthead justify-content-center">
 					<a class="nav-link active" href="/">Index</a>
 					<!-- changing to test sign up -->
-					<a class="nav-link" href="#">Sign Up</a> <a class="nav-link"
-						href="#">Login</a>
+					
 				</nav>
 			</div>
 		</header>
 
 		<main role="main" class="inner cover">
-			<h1 class="cover-heading">Inventory Maybe Below</h1>
+			<h1 class="cover-heading">Inventory Below</h1>
+			<!--  print if less than ten cars -->
+			<p>${minTenCars }</p>
+			<p>${min120 }</p>
 			<p class="lead">
 				<!-- start of chaos -->
 				<!-- list change -->
-				<c:forEach var="var" items="${list}">
+				
+				<!--<c:forEach var="var" items="${list}">
 					<c:out value="${var}" />
 					<br>
 					<br>
-				</c:forEach>
+				</c:forEach>  -->
 				<!-- End -->
 				<!-- table try -->
 				<c:if test="${list != null }">
@@ -97,8 +100,11 @@
 									<!-- <td><c:out value="${item.pictureUrl}" /></td>  -->
 									<td><c:out value="${item.year}" /></td>
 									<!-- button column addition -->
-									<td><button type="submit" class="btn btn-primary">See
-											Car Details</button></td>
+									
+									
+									<!--<button type="submit" class="btn btn-primary">See
+											Car Details</button>  -->
+									<td><a href="car-purchase?carDescription=${item.carDescription}" class="text-info"><button class="myButton">View Details</button></a></td>
 								</tr>
 							</c:forEach>
 
@@ -110,15 +116,14 @@
 			</p>
 
 			<p class="lead">
-				<a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+				
 			</p>
 		</main>
 
 		<footer class="mastfoot mt-auto">
 			<div class="inner">
 				<p>
-					Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>,
-					by <a href="https://twitter.com/mdo">@mdo</a>.
+					
 				</p>
 			</div>
 		</footer>

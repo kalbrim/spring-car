@@ -48,22 +48,22 @@
 				<nav class="nav nav-masthead justify-content-center">
 					<a class="nav-link active" href="/">Index</a>
 					<!-- changing to test sign up -->
-					<a class="nav-link" href="#">Sign Up</a> <a class="nav-link"
-						href="#">Login</a>
+					<a class="nav-link" href="/inventory">Inventory</a>
 				</nav>
 			</div>
 		</header>
 
 		<main role="main" class="inner cover">
-			<h1 class="cover-heading">Search Maybe Below</h1>
+			<h1 class="cover-heading">Search Below</h1>
 			<p class="lead">
 				<!-- start of chaos -->
 				<!-- list change -->
-				<c:forEach var="var" items="${list}">
+
+				<!-- <c:forEach var="var" items="${list}">
 					<c:out value="${var}" />
 					<br>
 					<br>
-				</c:forEach>
+				</c:forEach> -->
 				<!-- End -->
 				<!-- table try -->
 				<c:if test="${list != null }">
@@ -92,7 +92,8 @@
 									<td><c:out value="${item.price}" /></td>
 									<td><c:out value="${item.model}" /></td>
 									<td><c:out value="${item.carDescription}" /></td>
-									<td><img  height="100px" width="200px" src="<c:out value="${item.pictureUrl}"/>"/></td>
+									<td><img height="100px" width="200px"
+										src="<c:out value="${item.pictureUrl}"/>" /></td>
 
 									<!-- <td><c:out value="${item.pictureUrl}" /></td>  -->
 									<td><c:out value="${item.year}" /></td>
@@ -109,17 +110,12 @@
 
 			</p>
 
-			<p class="lead">
-				<a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-			</p>
+			<p class="lead"></p>
 		</main>
 
 		<footer class="mastfoot mt-auto">
 			<div class="inner">
-				<p>
-					Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>,
-					by <a href="https://twitter.com/mdo">@mdo</a>.
-				</p>
+				<p></p>
 			</div>
 		</footer>
 	</div>

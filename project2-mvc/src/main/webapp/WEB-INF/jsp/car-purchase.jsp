@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Car Details</title>
+<title>Car Details and Purchase</title>
 
 <link rel="canonical"
 	href="https://getbootstrap.com/docs/4.4/examples/cover/">
@@ -46,37 +46,41 @@
 			<div class="inner">
 				<h3 class="masthead-brand">Car Purchase</h3>
 				<nav class="nav nav-masthead justify-content-center">
-					<a class="nav-link active" href="/index">Home/Index</a> <a
-						class="nav-link" href="/inventory">Inventory</a> <a
-						class="nav-link" href="#">Contact</a>
+					<a class="nav-link active" href="/">Home/Index</a> <a
+						class="nav-link" href="/inventory">Inventory</a> 
 				</nav>
 			</div>
 		</header>
 
 		<main role="main" class="inner cover">
+		
 
 			<!-- new stuff -->
 			<h1 class="cover-heading">Car Details</h1>
-			<p class="lead">Thank you picture ${car.pictureUrl} <br>
-			<img  height="100px" width="200px" src="${car.pictureUrl}"><br>
-				${car.manufacturer} <br>
-				${car.dateAddedToInventory}<br>
-				${car.kilometers} <br>
-				${car.price} <br>
-				${car.model} <br>
-				${car.carDescription} <br>
-				${car.year} <br>
-				for signing up for this test page.</p>
 
-			<!-- Notice the form form stuff -->
+			<!---->
+			<p class="lead">
 
-			<form:form method="post" action="/add-car" modelAttribute="car">
+				Picture ${car.pictureUrl} <br> <img height="100px"
+					width="200px" src="${car.pictureUrl}"><br>
+				${car.manufacturer} <br> ${car.dateAddedToInventory}<br>
+				${car.kilometers} <br> ${car.price} <br> ${car.model} <br>
+				${car.carDescription} <br> ${car.year} <br> for signing up
+				for this test page.
+			</p>
+			<p>
+				<br>${over120message }</p>
+
+
+			<!-- Notice the form form try again -->
+			<form:form method="post" action="/car-purchase" modelAttribute="transaction">
 
 				<div class="form-row">
 					<div class="form-group col-md-6">
-						<label for="inputManufacturer">Manufacturer</label>
-						<form:input path="manufacturer" type="text" class="form-control"
-							id="inputManufacturer" />
+
+						<label for="inputBuyer">Buyer Name</label>
+						<form:input path="buyer" type="text" class="form-control"
+							id="inputBuyer" />
 					</div>
 
 				</div>
@@ -93,23 +97,16 @@
 				</div>
 
 
-
-
-				<div class="form-group">
-					<div class="form-check">
-						<input class="form-check-input" type="checkbox" id="gridCheck" />
-						<label class="form-check-label" for="gridCheck"> Check me
-							out </label>
-					</div>
-				</div>
 				<button type="submit" class="btn btn-primary">Buy Car</button>
 			</form:form>
+
+
 		</main>
 
 		<footer class="mastfoot mt-auto">
 			<div class="inner">
 				<p>
-					Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>
+					
 				</p>
 			</div>
 		</footer>
